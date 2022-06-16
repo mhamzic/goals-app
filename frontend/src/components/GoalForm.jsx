@@ -7,8 +7,8 @@ const GoalForm = () => {
   const dispatch = useDispatch();
 
   const onSubmit = (e) => {
-    e.preventDefualt();
-    dispatch(createGoal(text));
+    e.preventDefault();
+    dispatch(createGoal({text}));
   };
   return (
     <section className="form">
